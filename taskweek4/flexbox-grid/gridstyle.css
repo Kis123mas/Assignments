@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* working on the body tag */
+body{
+    background-color: grey;
+display: flex;
+place-items: center;
+height: 100vh;
+}
+/* layout fommating 3 row 3 column */
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+}
+/* working on the div tag in main tag */
+main div{
+    padding: 2em;
+    text-align: center;
+    border-radius: 0;
+    height: 200px;
+}
+/* working on item-a class */
+.item-a{
+    background-color: #eb5020;
+    grid-area: a;
+}
+/* working on item-b class */
+.item-b{
+    background-color: rgb(255, 164, 1);
+    grid-area: b;
+}
+/* working on item-c class */
+.item-c{
+    background-color: rgb(5, 170, 66);
+    grid-area: c;
+}
+/* working on item-d class */
+.item-d{
+    background-color: rgb(1, 174, 253);
+    grid-area: d;
+    height: 62px;
+}
+/* working on item-e class */
+.item-e{
+    background-color: rgb(1, 174, 253);
+    grid-area: e;
+    height: 62px;
+}
+.btn5{
+    margin: 60px 0;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(14, 11, 11);
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.btn4{
+    color: hsl(180, 33%, 97%);
+}
+.btn5:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: rgb(10, 8, 8);
+    transition: 0.4s;
+}
+.click{
+    text-align: center;
+}
+h1{
+    margin-top: 0;
+}
